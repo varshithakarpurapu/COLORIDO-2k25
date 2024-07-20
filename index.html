@@ -10,8 +10,8 @@
 </head>
 <style>
     body{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-        /* font-family: 'Aligarh', 'sans-serif'; */
+        /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  */
+        font-family: cursive;
     }
     a{
         text-decoration: none;
@@ -31,48 +31,70 @@
         background-color: rgb(231, 236, 240);
         text-align: center;
     }
+    y{
+        text-decoration: none;
+        display: inline-block;
+        text-transform: capitalize;
+        position: relative;
+    }
+    y:hover{
+        color: #F8F8F8;
+    }
+    y::before{
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background-color: #edcf22;
+        transition: all 0.5s ;
+    }
+    y:hover::before{
+        width: 100%;
+    }
     .one{
             border: 5px solid rgb(0, 0, 0);
             width:280px;
             height: 360px;
             display:block;
             float:left;
-            /* margin-top: 90px;
-            margin-left:60px; */
+            /* margin-top: 90px;*/
+            margin-left:5%; 
             text-align:left;
             border:2px solid black;
             box-shadow: 4px 4px rgb(98, 181, 213);
             background-color: rgb(231, 236, 240);
             transition: box-shadow 0.3s ease, background 0.3s ease;
-            /* position: relative; */
+            position: relative;
 }
         .two{
             width:280px;
             height: 370px;
             display:block;
             float:left;
-            /* margin-top: 50px;
-            margin-left:100px; */
+            /* margin-top: 50px;*/
+            margin-left:5%;
             text-align:left;
             border:2px solid rgb(0, 0, 0);
             box-shadow: 4px 4px rgb(98, 181, 213);
             background-color: rgb(231, 236, 240);
             transition: box-shadow 0.3s ease, background 0.3s ease;
-            /* position: relative; */
+            position: relative;
         }
         .three{
             width:280px;
             display:block;
             float:left;
-            /* margin-top: 90px;
-            margin-left:100px; */
+            /* margin-top: 90px;*/
+            margin-left:5%;
             text-align:left;
             height: 380px;
             border:2px solid black;
             box-shadow: 4px 4px rgb(98, 181, 213);
             background-color: rgb(231, 236, 240);
             transition: box-shadow 0.3s ease, background 0.3s ease;
-            /* position: relative; */
+            position: relative;
         }
         .one:hover, .two:hover, .three:hover {
             box-shadow: 8px 8px rgb(98, 181, 213);
@@ -92,7 +114,8 @@
             border: none;
             padding: 15px 32px;
             text-align: center;
-            background-color: rgb(37, 44, 232);
+            /* background-color: rgb(37, 44, 232); */
+            background-color: rgb(14, 102, 136);;
             font-size: 16px;
             color: white;
             border-radius: 6px;
@@ -175,24 +198,26 @@
         <div class="navbar-names">
             <ul>
                 <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-                <li><a class="logo" href="#"><img src="20240718_151041.jpg" alt="colorido Logo"  width="250px" height="60px" style="overflow: hidden;"></a></li>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <li><p><a href="http://www.rvrjc.ac.in/" style="color: #000000; text-decoration: none;">About College</a></p></li>
-                <li><p><a href="#accomodation" style="color: #000000; text-decoration: none;">Accomodation</a></p></li>
-                <li><p><a href="#Transportation" style="color: #000000; text-decoration: none;">Transportation</a></p></li>&nbsp;&nbsp;
-                <li><p><a href="#contact" style="color: #000000; text-decoration: none;">Contact Us</a></p></li>
-                <li><p><a href="#events" style="color: #000000; text-decoration: none;">Events</a></p></li>
+                <li><img  style="padding-left: 5px;" src="20240718_151041.jpg" alt="colorido Logo"  width="250px" height="60px" style="overflow: hidden;"></li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><y><a href="http://www.rvrjc.ac.in/" style="color: #000000; ">About College</a></y></li>
+                <li><y><a href="http://www.rvrjcce.ac.in/hostels.php" style="color: #000000;">Accomodation</a></y></li>
+                <li><y><a href="routes.pdf" style="color: #000000;">Transportation</a></y></li>
+                <li><y><a href="https://rvrjcce.ac.in/contactus.php" style="color: #000000; ">Contact Us</a></y></li>
+                <li><y><a href="#event1" style="color: #000000; ">Events</a></y></li>
+                
             </ul>
         </div>            
 
         <section class="banner">
             <br><br><br><br>
-            <img src="20240718_144124.jpg" alt="poster banner" width="1000px" height="580px"><br><br><br>
+            <img style=" width: 80%;" src="20240718_144124.jpg" alt="poster banner" height="580px"><br><br><br>
             <marquee style="font-size: 35px; color: rgb(231, 28, 28);" width="80%" direction="left" height="50px"><strong>NOTE:</strong> No Registration Fee</marquee>
             
         </section>
-        <section class="event-cat">
-            <h1 style="font-size: 35px;">Events Category</h1>
+        <section class="event-cat" id="event1">
+            <h1 style="font-size: 35px;">EVENTS CATEGORY</h1>
             <div class="container">
             <div class="one">
                 <p style="text-align: center;"> <b style="font-size: 25px;">Literature & Cultural</b><br></p>
@@ -242,7 +267,7 @@
         </section>
         <section class="accom">
             
-            <h1 style="font-size: 35px; text-align: center;">Accomodation</h1>
+            <h1 style="font-size: 35px; text-align: center;">ACCOMODATION</h1>
             <ol style="text-align: left; ">
                 <!-- line-height: 30px; -->
                 <li style="font-size: 19px;">&nbsp;&nbsp;⏹️ Students coming from other colleges can use Accomodation facility(free)</li>
@@ -279,7 +304,7 @@
         </section>
         <section>
             <br>
-                <h1 style="font-size: 35px; text-align: center;">Transportation</h1>
+                <h1 style="font-size: 35px; text-align: center;">TRANSPORTATION</h1>
                 <ol>
                     <li style="font-size: 20px;">⏹️ Available from Guntur & chilkalurupeta</li>
                     <li style="font-size: 20px;"> ⏹️ At 7 AM and 9 AM</li>
@@ -302,7 +327,7 @@
 
         <section >
             <br>
-            <h1 style="font-size: 35px; text-align: center;">Contact Us</h1>
+            <h1 style="font-size: 35px; text-align: center;">CONTACT US</h1>
             <strong style="font-size: 25px; padding-left: 5%;">Event Coordinators</strong><br><br>
             <table border="" style=" background-color:rgb(246, 243, 239); border-collapse: collapse; line-height: 35px; width: 90%;" class="centr">
                         <thead>
